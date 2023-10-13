@@ -1,0 +1,1 @@
+export const STORAGE_TOKEN_KEY = 'quiz_access_token';

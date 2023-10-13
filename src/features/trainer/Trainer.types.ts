@@ -1,0 +1,1 @@
+import {TQuestion} from "src/features/questions/Questions.types";import {TCategory} from "src/features/categories/Categories.types";export interface ITrainerQuestion extends TQuestion{	category: TCategory;	successes_in_row?: number;}export type TTrainerQuestionsResponse = ITrainerQuestion[]

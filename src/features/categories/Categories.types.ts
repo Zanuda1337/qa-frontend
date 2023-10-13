@@ -1,0 +1,1 @@
+export type TCategory = {	id: number;	name: string;	questionsCount?: {		learned: number;		mastered: number;		total: number;	}}export type TCategoriesResponse = TCategory[]export type TCategoryResponse = TCategory;export type TAddCategoryRequest = Omit<TCategory, 'questionsCount' | 'id'>export type TEditCategoryRequest = Omit<TCategory, 'questionsCount'>

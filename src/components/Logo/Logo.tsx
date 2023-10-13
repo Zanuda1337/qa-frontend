@@ -1,0 +1,1 @@
+import React from 'react';import classes from './Logo.module.scss'type TLogoProps = {}const Logo: React.FC<TLogoProps> = ({}) => {	return (		<div className={classes.logo}>			<div/>			<div/>			<div/>		</div>	);};export default Logo;

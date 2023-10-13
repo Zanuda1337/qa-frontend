@@ -1,0 +1,1 @@
+import {axiosInstance} from "src/api";export const imagesApi = {	upload: (formData: FormData) => axiosInstance.post<{img: string}>('/images/upload', formData)}

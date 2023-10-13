@@ -1,0 +1,1 @@
+$logo_width: 3rem;.logo {  display: flex;  width: $logo_width;  flex-direction: column;  gap: 0.3rem;  & > div {    background: #44575f;    height: 0.3rem;    width: $logo_width / 2;    &:first-child {}    &:nth-child(2) {      width: 100%;    }    &:last-child {      margin-left: auto;    }  }}

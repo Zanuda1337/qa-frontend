@@ -1,0 +1,1 @@
+import {STORAGE_CATEGORY_PREFERENCES} from "src/consts";export const getCategoriesIdsFromStorage = (): number[] => {	const storageCategoriesIds: string | null = localStorage.getItem(STORAGE_CATEGORY_PREFERENCES)	return storageCategoriesIds !== null ? JSON.parse(storageCategoriesIds) : []}

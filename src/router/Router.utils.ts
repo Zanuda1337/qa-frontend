@@ -1,0 +1,1 @@
+import { TRoute } from './Router.types';import {  adminRoutes,  privateRoutes,  publicRoutes,} from 'src/router/Router.consts';export const getRoute = (path: string): TRoute | undefined => {  if(!path) return  return [...publicRoutes, ...privateRoutes, ...adminRoutes].find(    (r) => new RegExp(path).test(r.path)  );}

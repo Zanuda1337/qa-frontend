@@ -1,0 +1,1 @@
+export type TRoute = {	path: string;	label: string;	element: JSX.Element}

@@ -1,0 +1,138 @@
+*,
+*:after,
+*:before {
+  font-size: 10px;
+  font-family: 'Jost', sans-serif;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.admin-layout {
+  display: flex;
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+  }
+  .main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0 3rem;
+    @media (max-width: 500px){
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+.admin {
+  padding: 3rem 0;
+}
+
+body {
+  background: #fcfcfc;
+  *,
+  *:after,
+  *:before {
+    font-size: 1.4rem;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  align-items: center;
+}
+
+.breadcrumbs__text {
+  font-size: 1.6rem;
+  color: #222c32;
+}
+
+.breadcrumbs__separator {
+  font-size: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  @media (max-width: 500px){
+    padding: 0 1.5rem;
+  }
+}
+
+.table {
+  max-width: calc(100vw - 16rem);
+  //max-height: calc(100vh - 14rem);
+  @media (max-width: 500px) {
+    max-width: calc(100vw - 3rem);
+    //max-height: calc(100vh - 20rem);
+  }
+  .actionIcon {
+    width: 2rem;
+    fill: #222c32;
+  }
+  .save {
+    fill: #2569ff;
+  }
+  input {
+    font-size: 1.4rem;
+    font-family: Jost, sans-serif;
+  }
+}
+
+.form {
+  padding: 3rem 0;
+  margin: auto;
+  form {
+    align-items: flex-start;
+    max-width: 100rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    .preloader-container {
+
+      background: #fcfcfc;
+      z-index: 9999;
+      padding: 4rem;
+      justify-content: center;
+      display: flex;
+      position: absolute;
+      left: -1rem;
+      top: -1rem;
+      width: calc(100% + 2rem);
+      height: calc(100% + 2rem);
+      transition: .5s;
+      opacity: 0;
+      pointer-events: none;
+      &.active {
+        opacity: 1;
+      }
+    }
+    button {
+      padding: 1rem 3rem;
+      font-weight: 400;
+      border-radius: 1rem;
+      p {
+        font-family: Jost, sans-serif;
+        text-transform: initial;
+      }
+    }
+  }
+}
+
+.editorWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor {
+  display: flex;
+}
+
+.editorToolbar {
+  display: flex;
+}
